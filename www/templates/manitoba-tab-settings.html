@@ -1,0 +1,57 @@
+<ion-view class="manitoba_tab_settings" hide-nav-bar="true">
+  <ion-header-bar class="header_bar">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+
+    <div class="title" align="center">
+      Settings
+    </div>
+  </ion-header-bar>
+
+  <ion-content padding="false" scroll="true">
+      <div class="list">
+        <div class="item item-divider">
+          Map Type
+        </div>
+        
+        <ion-radio ng-repeat="item in map_types"
+                   ng-value="item.value"
+                   ng-model="$root.map_type"
+                   ng-change="mapTypeChange(item)">
+          {{ item.text }}
+        </ion-radio>
+      </div>
+
+      <div class="list">
+        <div class="item item-divider">
+          Overlay Option
+        </div>
+
+        <ion-toggle ng-model="overlay.boundary" ng-change="change_bounday_option()" toggle-class="toggle-calm">Boundary Line</ion-toggle>
+        <ion-toggle ng-model="overlay.area" ng-change="change_area_option()" toggle-class="toggle-calm">Area Shading</ion-toggle>
+
+      </div>
+
+      <div class="list">
+        <div class="item item-divider">
+          Boundary Color
+        </div>
+        
+        <ion-radio ng-repeat="item in boundary_types"
+                   ng-value="item.value"
+                   ng-model="$root.boundary_type"
+                   ng-change="boundaryTypeChange(item)">
+          {{ item.text }}
+        </ion-radio>
+      </div>
+
+      <div class="list">
+        <div class="item item-divider">
+          Online Tools
+        </div>
+        
+        <ion-item ng-click="email_us()">Email US</ion-item>
+        <ion-item ng-click="online_faq()">Online FAQ's</ion-item>
+      </div>
+  </ion-content>
+</ion-view>

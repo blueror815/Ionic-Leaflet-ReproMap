@@ -1,0 +1,64 @@
+<ion-view class="purchase_page" hide-nav-bar="true">
+
+  <ion-header-bar class="header_bar">
+    <div class="buttons">
+      <button class="button button-icon button-clear ion-navicon show primary" menu-toggle="left">
+      </button>
+
+      <button class="button button-icon button-clear ion-arrow-left-a secondary" id="btnBack" ng-click="goBack()">
+      </button>
+    </div>
+
+    <div class="title" align="center">
+      {{area_name}} Map
+    </div>
+
+  </ion-header-bar>
+
+  <ion-content padding="false" scroll="false">
+    <div class="list">
+        <div class="item">
+          <div class="input-label">
+            <h2>{{area_name}} Map Purchase</h2>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="input-label">
+            Map Date
+          </div>
+          <label style="float:right;">Jan/10</label>
+        </div>
+
+        <div class="item item-input item-select">
+          <div class="input-label">
+            Map
+          </div>
+          <select>
+            <option selected>b/w $16.00</option>
+            <option>b/w laminated $30.40</option>
+          </select>
+        </div>
+
+        <div class="item" align="right" style="padding:0px 10px 10px; border-top:0px;">
+          <button class="button button-balanced button-small" ng-click="">Add to cart</button>
+        </div>
+
+        <div class="item item-input item-select">
+          <div class="input-label">
+            Book
+          </div>
+          <select>
+            <option selected>b/w $48.00</option>
+            <option>b/w laminated $72.00</option>
+          </select>
+        </div>
+
+        <div class="item" align="right" style="padding:0px 10px 10px; border-top:0px;">
+          <button class="button button-balanced button-small" ng-click="">Add to cart</button>
+        </div>
+
+    </div>
+  </ion-content>
+
+</ion-view>

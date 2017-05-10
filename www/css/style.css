@@ -1,0 +1,67 @@
+/* Empty. Add your own CSS if you like */
+
+.header_bar.bar {
+    background-color: #64BC46 !important;
+}
+
+.header_bar.bar.bar-header .title {
+    text-align: center;
+    color: #ffffff;
+}
+
+.header_bar.bar .button.button-icon {
+    color: white;
+}
+
+/******* side menu ********/
+
+ion-side-menu .bar.bar-header {
+	background-color: #64BC46 !important;
+}
+
+ion-side-menu .bar.bar-header .title {
+	color: #ffffff !important;
+}
+
+/******* Loading *******/
+.loading-container .loading {
+    background-color: #33CD5F;
+}
+
+.spinner.light svg {
+  stroke: #fff !important;
+  fill: #fff !important;
+}
+
+/******* Tab ********/
+
+.tab-item {
+	text-align: center !important;
+}
+
+
+/******** Manitoba Map Tab Page *********/
+
+.manitoba_tab_map #map {
+	height:100%; 
+	width:100%; 
+	position:absolute;
+}
+
+/******** Purchase Page *********/
+
+.purchase_page .bar.bar-header .buttons .button {
+	display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

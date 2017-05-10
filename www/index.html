@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- Google Map API Key -->
+    <!--script src="js/services/map.api.js"></script-->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDDXLG5Op262p6E_GVYpFp8JcJMQsFDmO4"></script>
+
+    <!-- <script src="js/services/whatwg-fetch/fetch.js"></script> -->
+
+    <!-- Leaflet Openstreet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/sql.js@0.3.2/js/sql.js"></script>
+    <script src="js/services/Leaflet.TileLayer.MBTiles.js"></script>
+    <script src="js/services/leaflet-providers.js"></script>
+    <!-- <script type="text/javascript" src="js/services/fetch.js"></script> -->
+    
+    <!-- Customized Google Map Info Window -->
+    <script src="js/services/infobubble.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <!-- constant js -->
+    <script src="js/constants/constants.js"></script>
+
+    <!-- services js -->
+    <script src="js/services/common-service.js"></script>
+    <script src="js/services/parse.js"></script>
+    <script src="js/services/parse-key.js"></script>
+    <script src="js/services/parse.service.js"></script>
+    <script src="js/services/repro-service.js"></script>
+
+    <!-- controllers js -->
+    <script src="js/controllers/appctrl.js"></script>
+
+    <script src="js/controllers/manitoba_tab.js"></script>
+    
+    <script src="js/controllers/manitoba_tab_map.js"></script>
+    <script src="js/controllers/purchase.js"></script>
+
+    <script src="js/controllers/manitoba_tab_waypoints.js"></script>
+    <script src="js/controllers/manitoba_tab_settings.js"></script>
+
+  </head>
+
+  <body ng-app="repromap">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
